@@ -13,7 +13,7 @@ $postjson = json_decode(file_get_contents("php://input"), true);
  	 exit();
  }else{
  	$query = $pdo->prepare("INSERT INTO users SET nameInstituicao= :nameInstituicao, endereco= :endereco,cep= :cep,numero= :numero, cidade= :cidade, estado= :estado, email= :email, usuario= :usuario, senha= :senha, telefone= :telefone, nomeresponsavel= :nomeresponsavel");
-  
+   
        $query->bindValue(":nameInstituicao", $postjson['nameInstituicao']);
        $query->bindValue(":endereco", $postjson['endereco']);
        $query->bindValue(":cep", $postjson['cep']);

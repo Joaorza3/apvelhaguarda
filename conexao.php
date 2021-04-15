@@ -10,7 +10,7 @@ header('Content-Type: application/json; charset=utf-8');
 //dados do banco no servidor local
 $banco = 'velhaguarda';
 $host = 'localhost';
-$usuario = 'root';
+$usuario =  'root';
 $senha = '';
 try {
 
